@@ -10,7 +10,7 @@ public class WelcomeController {
     @Autowired
     WelcomeService service;
 
-    @RequestMapping("welcome")
+    @RequestMapping("/welcome")
     public String displayMessage() {
         return service.getWelcomeMessage();
     }
